@@ -1,0 +1,36 @@
+
+.pad-button {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    touch-action: manipulation;
+}
+
+.pad-button.yellow {
+    background-image: url("actionYellow.png");
+}
+
+.pad-button.red {
+    background-image: url("actionRed.png");
+}
+
+.pad-button.green {
+    background-image: url("actionGreen.png");
+}
+
+.pad-button.blue {
+    background-image: url("actionBlue.png");
+}
+
+.pad-button.active {
+    background-image: url("actionWhite.png");
+}
+
+.pad-button.disabled {
+    background-image: url("actionGrey.png");
+}
+
+body {
+    background-color: #333;
+}

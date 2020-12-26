@@ -1,0 +1,42 @@
+{
+  "name": "abc-web",
+  "version": "1.0.0",
+  "description": "browerify based app template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify index.js -o dist/bundle.js",
+    "watch": "watchify index.js -o dist/bundle.js -v",
+    "start": "node -r esm server.js"
+  },
+  "author": "Gab",
+  "license": "mit",
+  "dependencies": {
+    "@material/slider": "^3.1.0",
+    "@material/switch": "^3.1.0",
+    "browserify": "^16.3.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "jquery": "^3.4.1",
+    "watchify": "^3.11.1",
+    "ws": "^7.1.1"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "@babel/preset-env"
+          ]
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babelify": "^10.0.0"
+  }
+}
